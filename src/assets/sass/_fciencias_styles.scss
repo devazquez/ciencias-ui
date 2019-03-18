@@ -1,0 +1,18 @@
+#app{
+    color: $near-black;
+    border: 1px solid $gold;
+    background-color: $lightest-blue;
+    main.tc .container{
+      border: 1px solid $green;
+      min-height: 750px;
+    }
+  }
+  /*
+  Reglas de estilo de los formularios
+  */
+  .input.is-danger, .textarea.is-danger {  
+    border-color: $red;
+  }
+  .input.is-hovered, .input:hover, .textarea.is-hovered, .textarea:hover {
+    border-color: #b5b5b5;
+  }

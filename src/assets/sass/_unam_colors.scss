@@ -1,0 +1,40 @@
+/*
+
+   UANM
+   COLOR VARIABLES
+   --pos :: Colores definidos por el equipo de desarrollo de  
+            la UNAM que cumplen con criterios 
+            de accesibilidad WCAG 2.0
+   Colors
+   Grayscale
+   Transparencies
+*/
+
+$near-black: #32383C;            // Texto general 
+$red: #96241A;                   // Iconos mensajes de advertencia
+$dark-green:  #2E7B32;           // Texto visitado, estatus de terminado, y botones  
+$dgae-dark-gray:#32383C;          // Texto deshabilitado o bloqueado 
+$dgae-dark-gray2:#373A3C;         // Texto en tablas con fondo claro y en botones 
+$gold:#c5911f;                    // Color Dorado UNAM 
+ 
+$navy: #002B7A;                   // Texto titulares, opciones de menú secundario tab, 
+$dark-blue: #1C3D6D;              // Fondo cabecera, pie y botones 
+$blue: #002B7A;                   // Color titulares span 
+$light-blue: #33517C;             // Hover y activo elemento menu 
+$lightest-blue: #f0f8ff;          // Color de fondo de tablas  
+
+$light-silver: #FAFAFA;  // Fondo cajas y casillas de tablas
+$moon-gray: #DDDDDD;     // Color de borde casajas y casillas de tablas
+$light-gray: #D6D6D6;    // Color líneas de separación tablas y bordes 
+$near-white: #F5F5F5;    // Color de borde casajas y gradiantes 
+
+/*Sombras de texto y cajas*/
+$black-80: rgba(130, 130 , 130, 0.8);
+$black-70: rgba(130, 130 , 130, 0.7);
+$black-60: rgba(130, 130 , 130, 0.6);
+$black-50: rgba(130, 130 , 130, 0.5);
+$black-40: rgba(130, 130 , 130, 0.4);
+$black-30: rgba(130, 130 , 130, 0.3);
+$black-20: rgba(130, 130 , 130, 0.2);
+$black-10: rgba(130, 130 , 130, 0.1);
+
