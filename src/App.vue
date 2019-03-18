@@ -1,17 +1,28 @@
 <template lang="pug">
-  #app
-    .logoTexto FCiencias
-    img(id='escudo' :src ='fcescudo')
+#app.vh-100.wrapperTemplate
+  .box.header
+    //Header component
+    Header
+  .box.contaner
     router-view
+  .box.footer Footer 
+</div>
+    
+    
 </template>
 
 <script>
-  import imageLogo from '@/assets/fcescudo.png'
+  import Header from '@/components/layouts/Header.vue'
+  import Footer from '@/components/layouts/Footer.vue'
+
   export default {
     name: 'App',
+    components: {
+      Header,
+      Footer
+    },
     data: function () {
       return {
-        fcescudo: imageLogo
       }
     }
   }
@@ -24,11 +35,9 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
     .logoTexto{
       font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
       text-transform: uppercase;
-      display: block;
       font-size: 3rem;
       letter-spacing: 8px;
       color: #FFF;
@@ -41,6 +50,7 @@
       //background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);
       position: relative;
       padding: 20px 20px;
+      margin-top:10px;
       top: 10%;
       left: 50%;
       transform: translate(-50%,-50%);
