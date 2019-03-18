@@ -8,6 +8,7 @@ module.exports = {
           data: `
             @import "@/assets/sass/_fciencias_tachyons_sass.scss";
             @import "@/assets/sass/_fciencias_styles.scss";
+            @import "@/assets/sass/_unam_colors.scss";
             `
         }
       }

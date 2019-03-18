@@ -1,5 +1,5 @@
 <template lang="pug">
-  .pruebaContenedor
+  .pruebaContenedor.tc
     h1 {{ msg }}
       .cosa1.left.unamGoldColor Cosa1
       .cosa2.left.unamGoldColor.bold Cosa2
@@ -21,17 +21,16 @@ export default {
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style  lang="scss">
   //styles
-  $goldUnam:#c5911e;
   .pruebaContenedor{
     width: 90%;
-    border: 1px solid #193455;
+    border: transparent;
     .unamGoldColor.bold{
       font-weight: 900;
     }
     .unamGoldColor{
-      color:$goldUnam;
+      color:$gold;
       &.bold{
         font-weight: 600;
       }
