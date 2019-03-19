@@ -1,0 +1,10 @@
+  {
+    "navigation": {
+      "index": "Inicio",
+      "galeria": "Galerías",
+      "acerca": "Acerca"
+    },
+    "home": {
+      "title": "Inicio"
+    }
+  }

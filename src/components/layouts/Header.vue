@@ -4,7 +4,7 @@
       img.h3.w3.fl.pr2.db-l.dn-m.dn(id='escudoFC' :src ='fcEscudo')
       div.db-l.dn-m.dn.fl.f6
         p.ma0.b Facultad de Ciencias
-      .flex.justify-end.justify-end-l.justify-center-m.justify-center
+      .flex.justify-end.justify-end-l.justify-center-m.justify-center 
         img(id='escudoUNAM' :src ='unamEscudo')
     //navigation bar component
     navigation-bar(:menus="menus")
@@ -19,17 +19,17 @@
 
   const menuData = [
     {
-      name: 'navigation.index',
+      name: 'Inicio',
       href: '/inicio',
       children: []
     },
     {
-      name: 'navigation.galeria',
+      name: 'Galería',
       href: '/galeria',
       children: []
     },
     {
-      name: 'navigation.nosotros',
+      name: 'Acerca',
       href: '/acerca',
       children: []
     },

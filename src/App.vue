@@ -5,7 +5,8 @@
     Header
   .box.contaner
     router-view
-  .box.footer Footer 
+  .box.footer 
+    Footer 
 </div>
     
     
