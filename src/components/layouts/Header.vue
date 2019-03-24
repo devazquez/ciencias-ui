@@ -1,11 +1,12 @@
 <template lang="pug">
   header.white.mw-100.sans-serif.bg-dark-blue
-    .container-header.ph6-l.ph5-m.ph3.pv3.cf
-      img.h3.w3.fl.pr2.db-l.dn-m.dn(id='escudoFC' :src ='fcEscudo')
-      div.db-l.dn-m.dn.fl.f6
+    .container-header.ph4-l.ph5-m.ph3.pv3.cf
+      .escudo-FC
+        img.fl.pr2(id='escudoFC' :src ='fcEscudo')
+      .headerContent.fl.pr2.f6
         p.ma0.b Facultad de Ciencias
-      .flex.justify-end.justify-end-l.justify-center-m.justify-center 
-        img(id='escudoUNAM' :src ='unamEscudo')
+      .escudo-UNAM
+        img.fr.pr2(id='escudoUNAM' :src ='unamEscudo')
     //navigation bar component
     navigation-bar(:menus="menus")
 </template>
@@ -13,7 +14,7 @@
 <script>
   // import component, @ refers to the src directory
   import imageCiencias from '@/assets/images/fcescudo.png'
-  import imageUNAM from '@/assets/images/escudo_unam@2x.png'
+  import imageUNAM from '@/assets/images/logos unam-fm blanco.png'
 
   import NavigationBar from '@/components/primaryNavigation/NavigationBar.vue'
 
@@ -62,3 +63,33 @@
     }
   }
 </script>
+<style lang="scss">
+
+.container-header{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 2px;
+}
+.escudo-FC{
+  grid-column-start:1;
+  grid-column-end:3;
+  img{
+    width:6rem;
+    height:6rem;
+  }
+}
+.headerContent{
+  grid-column-start:3;
+  grid-column-end:9;
+}
+.escudo-UNAM{
+  grid-column-start:9;
+  grid-column-end:11;
+  img{
+    width:6rem;
+    height:6rem;
+  }
+}
+
+</style>
+
