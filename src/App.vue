@@ -3,7 +3,7 @@
   .box.header
     //Header component
     Header
-  .box.contaner
+  .box.container
     router-view
   .box.footer 
     Footer 

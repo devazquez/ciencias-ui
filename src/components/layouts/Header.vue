@@ -1,10 +1,12 @@
 <template lang="pug">
   header.white.mw-100.sans-serif.bg-dark-blue
-    .container-header.ph4-l.ph5-m.ph3.pv3.cf
+    .container-header.ph2-l.ph3-m.ph2.pv3.cf
       .escudo-FC
         img.fl.pr2(id='escudoFC' :src ='fcEscudo')
       .headerContent.fl.pr2.f6
-        p.ma0.b Facultad de Ciencias
+        p.ma0.b.f3.lh-title  Universidad Nacional Autónoma de México
+        p.ma0.b.f3.lh-subtitle  Facultad de Ciencias
+
       .escudo-UNAM
         img.fr.pr2(id='escudoUNAM' :src ='unamEscudo')
     //navigation bar component
@@ -72,22 +74,24 @@
 }
 .escudo-FC{
   grid-column-start:1;
-  grid-column-end:3;
+  grid-column-end:2;
   img{
     width:6rem;
     height:6rem;
   }
 }
 .headerContent{
-  grid-column-start:3;
-  grid-column-end:9;
+  grid-column-start:2;
+  grid-column-end:10;
+  text-align: left;
+  align-self: center;
 }
 .escudo-UNAM{
-  grid-column-start:9;
+  grid-column-start:10;
   grid-column-end:11;
   img{
     width:6rem;
-    height:6rem;
+    height:auto;
   }
 }
 
