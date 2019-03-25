@@ -1,12 +1,11 @@
 <template lang="pug">
-  header.white.mw-100.sans-serif.bg-dark-blue
-    .container-header.ph2-l.ph3-m.ph2.pv3.cf
+  header.white.mw-100.sans-serif.bg-dark-blue.cf
+    .container-header.ph2-l.ph3-m.ph2.pv2.cf
       .escudo-FC
         img.fl.pr2(id='escudoFC' :src ='fcEscudo')
-      .headerContent.fl.pr2.f6
+      .headerContent.pr2.f6
         p.ma0.b.f3.lh-title  Universidad Nacional Autónoma de México
         p.ma0.b.f3.lh-subtitle  Facultad de Ciencias
-
       .escudo-UNAM
         img.fr.pr2(id='escudoUNAM' :src ='unamEscudo')
     //navigation bar component
@@ -23,7 +22,7 @@
   const menuData = [
     {
       name: 'Inicio',
-      href: '/inicio',
+      href: '/',
       children: []
     },
     {

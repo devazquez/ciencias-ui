@@ -1,12 +1,17 @@
 <template lang="pug">
 #app.vh-100.wrapperTemplate
-  .box.header
-    //Header component
-    Header
-  .box.container
-    router-view
-  .box.footer 
-    Footer 
+  //Header component
+  Header
+  .container.w-90-l.w-90-m.w-90.pa4-l.pa1.mv3.cf.center.tc
+   transition(
+      name="fade"
+      mode="out-in"
+      @beforeLeave="beforeLeave"
+      @enter="enter"
+      @afterEnter="afterEnter"
+      )
+      router-view 
+  Footer 
 </div>
     
     
@@ -25,7 +30,25 @@
     data: function () {
       return {
       }
-    }
+    },
+    methods: {
+      // get height of the current page and save it in prevHeight variable
+      beforeLeave(element) {
+        this.prevHeight = getComputedStyle(element).height;
+      },
+      // activate transition of the height of the new page (router link)
+      enter(element) {
+        const { height } = getComputedStyle(element);
+        element.style.height = this.prevHeight;
+        setTimeout(() => {
+          element.style.height = height;
+        });
+      },
+      // set height of the page, in case new content is rendered
+      afterEnter(element) {
+        element.style.height = 'auto';
+      },
+    },
   }
 </script>
 
@@ -61,5 +84,28 @@
       width:150px;
       height:auto;
     }
+  }
+   /* global styles */
+  #app {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+  }
+  .content {
+    box-shadow: 0px 1px 4px $black-20;
+    flex: 1 0 auto;
+  }
+  /* transition styles */
+  .fade-enter-active,
+  .fade-leave-active {
+    transition-duration: 0.3s;
+    transition-property: height, opacity;
+    transition-timing-function: ease;
+    overflow: hidden;
+  }
+  .fade-enter,
+  .fade-leave-active {
+    opacity: 0
   }
 </style>

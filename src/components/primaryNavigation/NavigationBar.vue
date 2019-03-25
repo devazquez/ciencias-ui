@@ -1,20 +1,23 @@
 <template lang="pug">
-  nav.nav-bar.ph6-l.ph4-m.ph3.w-100.dt.dt--fixed.border-box.z-0(ref="navBar" :class="fixedTopClasses")
+  nav.nav-bar.border-box.z-0.dt.absolute.dt--fixed.bg-dark-blue(ref="navBar" :class="fixedTopClasses")
     transition(name="inflating")
       router-link.logo.fl.white.no-underline.pointer.mv2(to="/" tag="h1" v-show="scrolled") FCiencias
     a.nav-bar-toogle.fr.dim.grow.br4.ba.white.ph3.pv2.mv2.dn-ns.f5(@click="navBarToggle")
       | {{ mobileMenuIsClosed ? "Menú" : "Cerrar" }}
-    ul.main-nav.absolute.static-ns.w-100.bg-dark-blue.right-0.list.pl0.z-999.db.dtc-ns.v-mid.tr.overflow-hidden
+    ul.main-nav.static-ns.w-100.bg-dark-blue.right-0.list.pl0.z-999.db.dtc-ns.v-mid.tr
       nav-menu(
-      v-for="(menu, index) in menus"
-      :menu="menu"
-      :key="index"
-      :active="index === activeSubmenu"
-      @click.native="setActiveSubmenu(index)"
+        v-for="(menu, index) in menus"
+        :menu="menu"
+        :key="index"
+        :active="index === activeSubmenu"
+        @click.native="setActiveSubmenu(index)"
       )
 </template>
 
 <script>
+  //:active="index === activeSubmenu"
+  //- @click.native="setActiveSubmenu(index)"
+
   import AccordionTransition from '@/components/ui/AccordionTransition'
   import NavMenu from '@/components/primaryNavigation/NavMenu.vue'
 
@@ -34,11 +37,13 @@
       handleScroll () {
         let headerHeight = this.$refs.navBar.clientHeight;
         this.scrolled = (window.pageYOffset >= headerHeight)
+        console.log("medida del alto de header", headerHeight)
+        console.log("se hizo scroll ", this.scrolled)
       },
       navBarToggle () {
         this.mobileMenuIsClosed = !this.mobileMenuIsClosed
       },
-      // manage when submenu is open or closed
+      //manage when submenu is open or closed
       setActiveSubmenu: function (index) {
         // if item has selected again
         let hasSelected = this.activeSubmenu === index
@@ -57,9 +62,10 @@
     computed: {
       // set visible nav-bar when scrolling page
       fixedTopClasses: function () {
+        console.log("entro")
         return {
-          'fixed top-0 z-1 bg-dark-blue shadow-3': this.scrolled,
-          'is-closed' : this.mobileMenuIsClosed
+          'fijar z-999 bg-dark-blue shadow-3': this.scrolled,
+          //'is-closed' : this.mobileMenuIsClosed
         }
       }
     },
@@ -77,7 +83,7 @@
 <style lang="scss" scoped>
   /* show text FCiencias effect */
   .inflating-enter-active, .fade-leave-active {
-    transition: all .2s ease-in;
+    transition: all .3s ease-in;
     transform: scale(1);
   }
   /* disappear text FCiencias effect */
@@ -91,11 +97,40 @@
   .is-closed .main-nav {
     max-height: 0;
   }
+  nav.nav-bar{
+    display:grid;
+    grid-template-columns: 20% 10% 70%;
+    grid-gap: 2px;
+  }
+  nav.nav-bar .logo{
+    grid-column-start:1;
+    grid-column-end:2;
+    align-self: center;
+  }
   .main-nav {
     max-height: 50em;
     transition: 0.3s ease all;
-    margin-top: 50px;
+    //display: flex;
+    //justify-content: space-between;
+    list-style: none;
+    grid-column-start:3;
+    grid-column-end:4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
   }
+ 
+  .fijar{
+    position:fixed;
+    top:0;
+    overflow: hidden;
+    opacity: .98;
+    ul{
+      opacity: 1;
+    }
+  }
+
+
   @media #{$breakpoint-large} {
     .main-nav {
       overflow: visible;
