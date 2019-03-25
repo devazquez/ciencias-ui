@@ -22,7 +22,7 @@
   const menuData = [
     {
       name: 'Inicio',
-      href: '/',
+      href: '/home',
       children: []
     },
     {
@@ -36,18 +36,9 @@
       children: []
     },
     {
-      name: 'Menú',
+      name: 'Prueba',
       href: '#',
-      children: [
-        {
-          name: 'Configuración',
-          href: '/conf'
-        },
-        {
-          name: 'Salir',
-          href: '/salir'
-        }
-      ]
+      children: []
     }
   ]
   export default {

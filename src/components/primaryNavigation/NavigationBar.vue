@@ -2,22 +2,15 @@
   nav.nav-bar.border-box.z-0.dt.absolute.dt--fixed.bg-dark-blue(ref="navBar" :class="fixedTopClasses")
     transition(name="inflating")
       router-link.logo.fl.white.no-underline.pointer.mv2(to="/" tag="h1" v-show="scrolled") FCiencias
-    a.nav-bar-toogle.fr.dim.grow.br4.ba.white.ph3.pv2.mv2.dn-ns.f5(@click="navBarToggle")
-      | {{ mobileMenuIsClosed ? "Menú" : "Cerrar" }}
-    ul.main-nav.static-ns.w-100.bg-dark-blue.right-0.list.pl0.z-999.db.dtc-ns.v-mid.tr
+    ul.main-nav.static-ns.bg-dark-blue.right-0.list.pl0.z-999.db.dtc-ns.v-mid.tr
       nav-menu(
         v-for="(menu, index) in menus"
         :menu="menu"
         :key="index"
-        :active="index === activeSubmenu"
-        @click.native="setActiveSubmenu(index)"
       )
 </template>
 
 <script>
-  //:active="index === activeSubmenu"
-  //- @click.native="setActiveSubmenu(index)"
-
   import AccordionTransition from '@/components/ui/AccordionTransition'
   import NavMenu from '@/components/primaryNavigation/NavMenu.vue'
 
@@ -64,7 +57,7 @@
       fixedTopClasses: function () {
         console.log("entro")
         return {
-          'fijar z-999 bg-dark-blue shadow-3': this.scrolled,
+          'fijar z-999 shadow-3': this.scrolled,
           //'is-closed' : this.mobileMenuIsClosed
         }
       }
@@ -108,10 +101,9 @@
     align-self: center;
   }
   .main-nav {
+    width: 98%;
     max-height: 50em;
     transition: 0.3s ease all;
-    //display: flex;
-    //justify-content: space-between;
     list-style: none;
     grid-column-start:3;
     grid-column-end:4;

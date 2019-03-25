@@ -1,8 +1,6 @@
 <template lang="pug">
-  li.w-auto-ns.w-100.dib.relative-ns.tc.hover-bg-gold
-    router-link.nav-links.white.no-underline.f6.pa3.b.w-100.dib(
-    :to='menu.href'
-    ) {{ menu.name }}
+  li.w-auto-ns.w-90.dib.relative-ns.tc.hover-bg-gold
+    router-link.nav-links.white.no-underline.f5.pa2.b.w-80.dib(:to='menu.href') {{ menu.name }}
       
 </template>
 
