@@ -2,7 +2,7 @@
 #app.vh-100.wrapperTemplate
   //Header component
   Header
-  .container.w-90-l.w-90-m.w-90.pa4-l.pa1.mv3.cf.center.tc
+  .container.center.w-80-l.w-80-m.w-90.pa2-l.pa1.mv2.cf.tc
    transition(
       name="fade"
       mode="out-in"
@@ -92,7 +92,7 @@
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
   }
-  .content {
+  .container {
     box-shadow: 0px 1px 4px $black-20;
     flex: 1 0 auto;
   }
