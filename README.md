@@ -1,6 +1,7 @@
 # ciencias-ui
 # M. en C. Dario Emmanuel Vázquez Ceballos
 # darioemmanuel@ciencias.unam.mx
+# actualización 30 de Marzo 2019
 # -----------------------------------------------------------------------------------------------
 
 # Descripción:
