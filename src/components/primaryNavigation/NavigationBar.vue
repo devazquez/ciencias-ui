@@ -1,5 +1,5 @@
 <template lang="pug">
-  nav.nav-bar.border-box.z-0.dt.absolute.dt--fixed.bg-dark-blue(ref="navBar" :class="fixedTopClasses")
+  nav.nav-bar.border-box.z-999.dt.absolute.dt--fixed.bg-dark-blue(ref="navBar" :class="fixedTopClasses")
     transition(name="inflating")
       router-link.logo.fl.white.no-underline.pointer.mv2(to="/" tag="h1" v-show="scrolled") FCiencias
     ul.main-nav.static-ns.bg-dark-blue.right-0.list.pl0.z-999.db.dtc-ns.v-mid.tr
