@@ -7,14 +7,21 @@
       div.cosa(v-for="index in lmax")
         | {{ index }}
         | {{ loremArray[aleatorio(min, max)].msg}}
-    
+    div(v-for= "i in dataL.settings[0]")
+      | {{ i }}
+    p {{dataL.settings[0]["min"]}}
+    p {{dataL.settings[0]["max"]}}
+    p {{dataL.settings[0]["lmax"]}}
 </template>
 
 <script>
+import dataLorem from '@/assets/data/lorem.json'
 export default {
+  
   name: 'home',
   data () {
     return {
+      dataL: dataLorem,
       min: 1,
       max: 3,
       lmax:12,
@@ -32,7 +39,13 @@ export default {
   methods:{
     aleatorio: function(a,b) {
       return Math.round(Math.random()*(b-a)+parseInt(a));
+    },
+    loadJsonLorem: function(){
+      this.dataL = JSON.parse(dataLorem);
     }
+  },
+  mounted(){
+    this.loadJsonLorem();
   }
 }
 
