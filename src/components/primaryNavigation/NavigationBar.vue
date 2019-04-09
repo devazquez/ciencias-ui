@@ -30,8 +30,8 @@
       handleScroll () {
         let headerHeight = this.$refs.navBar.clientHeight;
         this.scrolled = (window.pageYOffset >= headerHeight)
-        console.log("medida del alto de header", headerHeight)
-        console.log("se hizo scroll ", this.scrolled)
+        //console.log("medida del alto de header", headerHeight)
+        //console.log("se hizo scroll ", this.scrolled)
       },
       navBarToggle () {
         this.mobileMenuIsClosed = !this.mobileMenuIsClosed

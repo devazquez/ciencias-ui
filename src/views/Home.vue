@@ -7,11 +7,7 @@
       div.cosa(v-for="index in lmax")
         | {{ index }}
         | {{ loremArray[aleatorio(min, max)].msg}}
-    div(v-for= "i in dataL.settings[0]")
-      | {{ i }}
-    p {{dataL.settings[0]["min"]}}
-    p {{dataL.settings[0]["max"]}}
-    p {{dataL.settings[0]["lmax"]}}
+      
 </template>
 
 <script>
@@ -21,19 +17,13 @@ export default {
   name: 'home',
   data () {
     return {
-      dataL: dataLorem,
-      min: 1,
-      max: 3,
-      lmax:12,
+      min:'',
+      max:'',
+      lmax:'',
+      dataL: '',
+      loremArray: '',
       msg: 'Patrón Springboard',
       descripcion: 'El patrón Springboard, también llamado Launchpad, fue el patrón de navegación más popular en 2011. Este diseño es una pantalla de inicio con opciones que actúan como puntos de inicio en la aplicación.',
-      loremArray: [
-        {msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'},
-        {msg: 'Maecenas feugiat luctus enim a porttitor. Vivamus dapibus'},
-        {msg: 'Aenean porta venenatis consectetur. Class aptent taciti'},
-        {msg: 'Nullam ac condimentum dui, porttitor egestas turpis'},
-        {msg:'Fusce facilisis, odio nec viverra tempus, eros arcu blandit nisi'}
-      ]
     }
   },
   methods:{
@@ -41,11 +31,26 @@ export default {
       return Math.round(Math.random()*(b-a)+parseInt(a));
     },
     loadJsonLorem: function(){
-      this.dataL = JSON.parse(dataLorem);
+      this.dataL = dataLorem;
+      console.log("dataL", this.dataL)
+      console.log("settings", this.dataL['settings'][0])
+      console.log("lorem", this.dataL['loremArray'])
+    },
+    setSettings: function(){
+      this.settings = this.dataL['settings'][0];
+      this.min = this.dataL['settings'][0]['min'];
+      this.max = this.dataL['settings'][0]['max'];
+      this.lmax = this.dataL['settings'][0]['lmax']
+    },
+    setLoremArray: function(){
+      this.loremArray = this.dataL['loremArray']
+      console.log('loremArray ', this.loremArray)
     }
   },
   mounted(){
     this.loadJsonLorem();
+    this.setSettings();
+    this.setLoremArray();
   }
 }
 
