@@ -36,8 +36,8 @@
       children: []
     },
     {
-      name: 'Prueba',
-      href: '#',
+      name: 'Eventos',
+      href: '/eventos',
       children: []
     }
   ]

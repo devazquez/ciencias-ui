@@ -18,6 +18,11 @@ export default new Router({
       component: Home
     },
     {
+      path: "/eventos",
+      name: "eventos",
+      component: () => import(/* webpackChunkName: "eventos" */ "./views/Eventos.vue")
+    },
+    {
       path: '/formulario',
       name: 'formulario',
       // route level code-splitting
