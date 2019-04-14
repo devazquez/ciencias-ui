@@ -1,118 +1,116 @@
 {
-  "eventos":{
-    "evento": [
-        {
-        "id": "1",
-        "titulo": "Batman animado: saliendo de las sombras",
-        "fecha": "27 abril, 2019 a las 2:00 pm",
-        "ubicacion": "Casa del Lago Bosque de Chapultepec Primera Seccion S/N San Miguel Chapultepec I Secc, 11850 Ciudad de México",
-        "imagen": "eventos/batman.jpg"
-        },
-        {
-        "id": "2",
-        "titulo": "Idiotas contemplando la nieve",
-        "fecha": "11 abril, 2019 a las 6:00 pm – 14 abril, 2019 a las 8:00 pm",
-        "ubicacion": "Teatro Santa Catarina Jardín Sta Catarina 10 Santa Catarina, 04010 Ciudad de México, CDMX México",
-        "imagen": "eventos/idiotascontemplandolanieve.jpg"
-        },
-        {
-        "id": "3",
-        "titulo": "El Ensayo",
-        "fecha": "11 abril, 2019 a las 7:00 pm – 14 abril, 2019 a las 9:00 pm",
-        "ubicacion": "Foro del Centro Cultural Universitario Centro Cultural Universitaria Insurgentes Sur 3000, C.U., 04510 Ciudad de México, CDMX México",
-        "imagen": "eventos/elensayo.jpg"
-        },
-        {
-        "id": "4",
-        "titulo": "El Ensayo",
-        "fecha": "11 abril, 2019 a las 7:00 pm – 14 abril, 2019 a las 9:00 pm",
-        "ubicacion": "Foro del Centro Cultural Universitario Centro Cultural Universitaria Insurgentes Sur 3000, C.U., 04510 Ciudad de México, CDMX México",
-        "imagen": "eventos/elensayo.jpg"
-        },
-        {
-        "id": "5",
-        "titulo": "En Código Bolero: la dulce limerencia",
-        "fecha": "12 abril, 2019 a las 6:00 pm – 14 abril, 2019 a las 8:00 pm",
-        "ubicacion": "Sala Miguel Covarrubias Centro Cultural Universitario Insurgentes Sur 3000, C.U., 04510 Ciudad de México, CDMX México",
-        "imagen": "eventos/codigobolero.jpg"
-        },
-        {
-        "id": "6",
-        "titulo": "This is a human being",
-        "fecha": "12 abril, 2019 a las 7:00 pm – 14 abril, 2019 a las 8:00 pm",
-        "ubicacion": "Salón de Danza Centro Cultural Universitario Insurgentes Sur 3000, C.U., 04510 Ciudad de México, CDMX México",
-        "imagen": "eventos/codigobolero.jpg"
-        },
-        {
-        "id": "7",
-        "titulo": "Segundo concurso Impulso a la Innovación en la UNAM",
-        "fecha": "15 abril, 2019 a las 12:00 am – 19 abril, 2019 a las 11:45 pm",
-        "ubicacion": "CID UNAM Cerro del Agua 120 Romero de Terreros, 04310 Coyacán, CDMX México",
-        "imagen": "eventos/premioinnovacionUNAM.jpg"
-        },
-        {
-        "id": "8",
-        "titulo": "Actuación para principiantes",
-        "fecha": "19 abril, 2019 a las 10:00 am – 2:00 pm",
-        "ubicacion": "Museo Universitario del Chopo Calle Dr. Enrique Gonzalez Martinez 10 Sta María la Ribera, 06400 Ciudad de México, CDMX México",
-        "imagen": "eventos/tallerActuacion.jpg"
-        },
-        {
-        "id": "9",
-        "titulo": "Trainspotting",
-        "fecha": "20 abril, 2019 a las 2:00 pm – 4:00 pm",
-        "ubicacion": "Museo de la Luz San Ildefonso 43 Centro Histórico, Centro, 06020 cuauhtemoc, CDMX México",
-        "imagen": "eventos/trainspotting.jpg"
-        },
-        {
-        "id": "10",
-        "titulo": "Chemical Transmission: the key to understand brain function",
-        "fecha": "23 abril, 2019 a las 9:00 am – 24 abril, 2019 a las 6:00 pm",
-        "ubicacion": "Auditorio B Cto. Exterior S/N C.U., 04510 Ciudad de México, CDMX México",
-        "imagen": "eventos/symposiumchemical.jpg"
-        },
-        {
-        "id": "11",
-        "titulo": "Chemical Transmission: the key to understand brain function",
-        "fecha": "23 abril, 2019 a las 9:00 am – 24 abril, 2019 a las 6:00 pm",
-        "ubicacion": "Auditorio B Cto. Exterior S/N C.U., 04510 Ciudad de México, CDMX México",
-        "imagen": "eventos/symposiumchemical.jpg"
-        },
-        {
-        "id": "12",
-        "titulo": "Sesión II Imaginarios, ciencia y acciones para la sustentabilidad urbana y Taller Círculos de la Sustentabilidad",
-        "fecha": "23 abril, 2019 a las 10:00 am – 24 abril, 2019 a las 2:30 pm",
-        "ubicacion": "Auditorio Rolando García Torre II de Humanidades piso 1, Circuto Escolar, C.U., 04510 Ciudad de México, CDMX México",
-        "imagen": "eventos/imaginariosciencia.jpg"
-        },
-        {
-        "id": "13",
-        "titulo": "Detectando ondas de radio extraterrestres",
-        "fecha": "23 abril, 2019 a las 5:00 pm – 7:00 pm",
-        "ubicacion": "Astrolab, Casita de las Ciencias C.U. 04510 Ciudad de México, CDMX México",
-        "imagen": "eventos/fororadioastronomia.jpg"
-        },
-        {
-        "id": "14",
-        "titulo": "Developing computational tools to analyse single cell cancer genomics data",
-        "fecha": "23 abril, 2019 a las 5:00 pm – 6:00 pm",
-        "ubicacion": "Auditorio Dr. Guillermo Soberón Avenida Universidad s/n Chamilpa, 62210 Cuernavaca, Mor. México",
-        "imagen": "eventos/frontiersgenomics.jpg"
-        },
-        {
-        "id": "15",
-        "titulo": "Concurso universitario de imágenes fijas: Espacios de aprendizaje y enseñanza de la comunidad UNAM",
-        "fecha": "24 abril, 2019 a las 12:00 am – 11:45 pm",
-        "ubicacion": "CODEIC Cto. Centro Cultural 20 Insurgentes Cuicuilco, 04510 Ciudad de México, CDMX México",
-        "imagen": "eventos/espaciosaprendizaje.jpg"
-        },
-        {
-        "id": "16",
-        "titulo": "El impacto de la Contabilidad en las decisiones Ambientales en América Latina",
-        "fecha": "24 abril, 2019 a las 8:00 am – 10:30 am",
-        "ubicacion": "CEIICH Ciudad Universitaria S/N Delegación Coyoacán, Col. Universidad Nacional Autónoma de México, 04510 Ciudad de México, CDMX México",
-        "imagen": "eventos/impactocontabilidad.jpg"
-        }
-    ]
-  }
+  "eventos": [
+      {
+          "id": "1",
+          "titulo": "Batman animado: saliendo de las sombras",
+          "fecha": "27 abril, 2019 a las 2:00 pm",
+          "ubicacion": "Casa del Lago Bosque de Chapultepec Primera Seccion S/N San Miguel Chapultepec I Secc, 11850 Ciudad de México",
+          "imagen": "eventos/batman.jpg"
+      },
+      {
+          "id": "2",
+          "titulo": "Idiotas contemplando la nieve",
+          "fecha": "11 abril, 2019 a las 6:00 pm – 14 abril, 2019 a las 8:00 pm",
+          "ubicacion": "Teatro Santa Catarina Jardín Sta Catarina 10 Santa Catarina, 04010 Ciudad de México, CDMX México",
+          "imagen": "eventos/idiotascontemplandolanieve.jpg"
+      },
+      {
+          "id": "3",
+          "titulo": "El Ensayo",
+          "fecha": "11 abril, 2019 a las 7:00 pm – 14 abril, 2019 a las 9:00 pm",
+          "ubicacion": "Foro del Centro Cultural Universitario Centro Cultural Universitaria Insurgentes Sur 3000, C.U., 04510 Ciudad de México, CDMX México",
+          "imagen": "eventos/elensayo.jpg"
+      },
+      {
+          "id": "4",
+          "titulo": "El Ensayo",
+          "fecha": "11 abril, 2019 a las 7:00 pm – 14 abril, 2019 a las 9:00 pm",
+          "ubicacion": "Foro del Centro Cultural Universitario Centro Cultural Universitaria Insurgentes Sur 3000, C.U., 04510 Ciudad de México, CDMX México",
+          "imagen": "eventos/elensayo.jpg"
+      },
+      {
+          "id": "5",
+          "titulo": "En Código Bolero: la dulce limerencia",
+          "fecha": "12 abril, 2019 a las 6:00 pm – 14 abril, 2019 a las 8:00 pm",
+          "ubicacion": "Sala Miguel Covarrubias Centro Cultural Universitario Insurgentes Sur 3000, C.U., 04510 Ciudad de México, CDMX México",
+          "imagen": "eventos/codigobolero.jpg"
+      },
+      {
+          "id": "6",
+          "titulo": "This is a human being",
+          "fecha": "12 abril, 2019 a las 7:00 pm – 14 abril, 2019 a las 8:00 pm",
+          "ubicacion": "Salón de Danza Centro Cultural Universitario Insurgentes Sur 3000, C.U., 04510 Ciudad de México, CDMX México",
+          "imagen": "eventos/codigobolero.jpg"
+      },
+      {
+          "id": "7",
+          "titulo": "Segundo concurso Impulso a la Innovación en la UNAM",
+          "fecha": "15 abril, 2019 a las 12:00 am – 19 abril, 2019 a las 11:45 pm",
+          "ubicacion": "CID UNAM Cerro del Agua 120 Romero de Terreros, 04310 Coyacán, CDMX México",
+          "imagen": "eventos/premioinnovacionUNAM.jpg"
+      },
+      {
+          "id": "8",
+          "titulo": "Actuación para principiantes",
+          "fecha": "19 abril, 2019 a las 10:00 am – 2:00 pm",
+          "ubicacion": "Museo Universitario del Chopo Calle Dr. Enrique Gonzalez Martinez 10 Sta María la Ribera, 06400 Ciudad de México, CDMX México",
+          "imagen": "eventos/tallerActuacion.jpg"
+      },
+      {
+          "id": "9",
+          "titulo": "Trainspotting",
+          "fecha": "20 abril, 2019 a las 2:00 pm – 4:00 pm",
+          "ubicacion": "Museo de la Luz San Ildefonso 43 Centro Histórico, Centro, 06020 cuauhtemoc, CDMX México",
+          "imagen": "eventos/trainspotting.jpg"
+      },
+      {
+          "id": "10",
+          "titulo": "Chemical Transmission: the key to understand brain function",
+          "fecha": "23 abril, 2019 a las 9:00 am – 24 abril, 2019 a las 6:00 pm",
+          "ubicacion": "Auditorio B Cto. Exterior S/N C.U., 04510 Ciudad de México, CDMX México",
+          "imagen": "eventos/symposiumchemical.jpg"
+      },
+      {
+          "id": "11",
+          "titulo": "Chemical Transmission: the key to understand brain function",
+          "fecha": "23 abril, 2019 a las 9:00 am – 24 abril, 2019 a las 6:00 pm",
+          "ubicacion": "Auditorio B Cto. Exterior S/N C.U., 04510 Ciudad de México, CDMX México",
+          "imagen": "eventos/symposiumchemical.jpg"
+      },
+      {
+          "id": "12",
+          "titulo": "Sesión II Imaginarios, ciencia y acciones para la sustentabilidad urbana y Taller Círculos de la Sustentabilidad",
+          "fecha": "23 abril, 2019 a las 10:00 am – 24 abril, 2019 a las 2:30 pm",
+          "ubicacion": "Auditorio Rolando García Torre II de Humanidades piso 1, Circuto Escolar, C.U., 04510 Ciudad de México, CDMX México",
+          "imagen": "eventos/imaginariosciencia.jpg"
+      },
+      {
+          "id": "13",
+          "titulo": "Detectando ondas de radio extraterrestres",
+          "fecha": "23 abril, 2019 a las 5:00 pm – 7:00 pm",
+          "ubicacion": "Astrolab, Casita de las Ciencias C.U. 04510 Ciudad de México, CDMX México",
+          "imagen": "eventos/fororadioastronomia.jpg"
+      },
+      {
+          "id": "14",
+          "titulo": "Developing computational tools to analyse single cell cancer genomics data",
+          "fecha": "23 abril, 2019 a las 5:00 pm – 6:00 pm",
+          "ubicacion": "Auditorio Dr. Guillermo Soberón Avenida Universidad s/n Chamilpa, 62210 Cuernavaca, Mor. México",
+          "imagen": "eventos/frontiersgenomics.jpg"
+      },
+      {
+          "id": "15",
+          "titulo": "Concurso universitario de imágenes fijas: Espacios de aprendizaje y enseñanza de la comunidad UNAM",
+          "fecha": "24 abril, 2019 a las 12:00 am – 11:45 pm",
+          "ubicacion": "CODEIC Cto. Centro Cultural 20 Insurgentes Cuicuilco, 04510 Ciudad de México, CDMX México",
+          "imagen": "eventos/espaciosaprendizaje.jpg"
+      },
+      {
+          "id": "16",
+          "titulo": "El impacto de la Contabilidad en las decisiones Ambientales en América Latina",
+          "fecha": "24 abril, 2019 a las 8:00 am – 10:30 am",
+          "ubicacion": "CEIICH Ciudad Universitaria S/N Delegación Coyoacán, Col. Universidad Nacional Autónoma de México, 04510 Ciudad de México, CDMX México",
+          "imagen": "eventos/impactocontabilidad.jpg"
+      }
+  ]
 }

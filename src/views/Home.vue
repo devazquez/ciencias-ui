@@ -1,4 +1,3 @@
-
 <template lang="pug">
   .pruebaContenedor.w-100.center.tc
     h1 {{ msg }}
@@ -30,24 +29,24 @@ export default {
     aleatorio: function(a,b) {
       return Math.round(Math.random()*(b-a)+parseInt(a));
     },
-    loadJsonLorem: function(){
+    loadJsonLorem: function() {
       this.dataL = dataLorem;
       console.log("dataL", this.dataL)
       console.log("settings", this.dataL['settings'][0])
       console.log("lorem", this.dataL['loremArray'])
     },
-    setSettings: function(){
+    setSettings: function() {
       this.settings = this.dataL['settings'][0];
       this.min = this.dataL['settings'][0]['min'];
       this.max = this.dataL['settings'][0]['max'];
       this.lmax = this.dataL['settings'][0]['lmax']
     },
-    setLoremArray: function(){
+    setLoremArray: function() {
       this.loremArray = this.dataL['loremArray']
       console.log('loremArray ', this.loremArray)
     }
   },
-  mounted(){
+  mounted() {
     this.loadJsonLorem();
     this.setSettings();
     this.setLoremArray();

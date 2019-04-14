@@ -55,7 +55,6 @@
     computed: {
       // set visible nav-bar when scrolling page
       fixedTopClasses: function () {
-        console.log("entro")
         return {
           'fijar z-999 shadow-3': this.scrolled,
           //'is-closed' : this.mobileMenuIsClosed

@@ -11,16 +11,14 @@ export default new Router({
       name: "home",
       component: Home
     },
-    { path: '/', redirect: { name: 'home' }},
-    {
-      path: "/",
-      name: "home",
-      component: Home
+    { 
+      path: '/', 
+      redirect: { name: 'home' }
     },
     {
       path: "/eventos",
       name: "eventos",
-      component: () => import(/* webpackChunkName: "eventos" */ "./views/Eventos.vue")
+      component: () => import("@/views/Eventos.vue")
     },
     {
       path: '/formulario',
