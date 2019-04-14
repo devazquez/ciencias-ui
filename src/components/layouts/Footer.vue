@@ -17,6 +17,7 @@ import leyendaUNAM from '@/assets/images/unam-nacion.png'
 </script>
 
 <style lang="scss">
+
 footer .container-footer{ 
   img{
     width:6rem;

@@ -3,9 +3,9 @@
   .pruebaContenedor.w-100.center.tc
     h1 {{ msg }}
     p {{ descripcion }}
-    #listaEventos.vh-100.center.pa2-l.pa1 
+    #listaEventos.center.pa2-l.pa1 
       div.cosa(v-for="evento in listaEventos")
-        p {{ evento.titulo }}
+        p {{evento.id}} {{ evento.titulo }}
         p {{ evento.ubicacion }}
 </template>
 

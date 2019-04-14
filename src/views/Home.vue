@@ -2,7 +2,7 @@
   .pruebaContenedor.w-100.center.tc
     h1 {{ msg }}
     p {{ descripcion }}
-    #gridSpringboard.vh-100.center.pa2-l.pa1 
+    #gridSpringboard.vh-75.center.pa2-l.pa1 
       div.cosa(v-for="index in lmax")
         | {{ index }}
         | {{ loremArray[aleatorio(min, max)].msg}}

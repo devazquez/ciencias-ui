@@ -1,8 +1,8 @@
 <template lang="pug">
-#app.vh-100.wrapperTemplate
+#app.wrapperTemplate
   //Header component
   Header
-  .container.center.w-80-l.w-80-m.w-90.pa2-l.pa1.mv2.cf.tc
+  .container.w-80-l.w-80-m.w-90.pa2-l.pa1.mv2.cf.center.tc
    transition(
       name="fade"
       mode="out-in"
@@ -59,6 +59,8 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+    display: flex;
+    flex-direction: column;
     .logoTexto{
       font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
       text-transform: uppercase;
@@ -107,5 +109,8 @@
   .fade-enter,
   .fade-leave-active {
     opacity: 0
+  }
+  footer{
+    flex-shrink: 0;
   }
 </style>
