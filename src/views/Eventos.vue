@@ -4,13 +4,14 @@
     h1 {{ msg }}
     p {{ descripcion }}
     #listaEventos.center.pa2-l.pa1 
-      div.cosa(v-for="evento in listaEventos")
+      div.evento(v-for="evento in listaEventos")
         p {{evento.id}} {{ evento.titulo }}
+            span {{ evento.fecha }}
         p {{ evento.ubicacion }}
 </template>
 
 <script>
-import dataJson from '../assets/data/eventos.json'
+import dataJson from '@/assets/data/eventos.json'
 
 export default {
   name: 'Eventos',
