@@ -2,7 +2,7 @@
   .pruebaContenedor.w-100.center.tc
     h1 {{ msg }}
     p {{ descripcion }}
-    #gridSpringboard.vh-75.center.pa2-l.pa1 
+    #gridSpringboard.center.pa2-l.pa1 
       div.cosa(v-for="index in lmax")
         | {{ index }}
         | {{ loremArray[aleatorio(min, max)].msg}}
@@ -54,6 +54,7 @@ export default {
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<<<<<<< HEAD
 <style lang="scss">
 //styles
 .pruebaContenedor {
@@ -77,4 +78,54 @@ export default {
     border: 1px solid $red;
   }
 }
+=======
+<style  lang="scss">
+  //styles
+  .pruebaContenedor{
+    border: 1px solid $orange;
+    .unamGoldColor.bold{
+      font-weight: 900;
+    }
+    .unamGoldColor{
+      color:$gold;
+      &.bold{
+        font-weight: 600;
+      }
+    }
+    #gridSpringboard {
+      display:grid;
+      width:98%;
+      border:1px solid $blue;
+      overflow-wrap: break-word;
+    }
+    div{
+      border:1px solid $red;
+    }
+  }
+
+/* media queries para pantallas large*/
+  @media #{$breakpoint-large} {
+    .pruebaContenedor {
+      background: cyan;
+    }
+    #gridSpringboard {
+      grid-template-columns: 24% 24% 24% 24%;
+      grid-template-rows: 32% 32% 32%;
+      grid-gap: 1.3%;
+      grid-row-gap: 2%;
+    }
+  }
+  @media #{$breakpoint-medium} {
+    .pruebaContenedor {
+      background: cadetblue;
+    }
+     #gridSpringboard {
+      grid-template-columns: 32% 32% 32%;
+      grid-template-rows: 32% 32% 32% 32%;
+      grid-gap: 1.3%;
+      grid-row-gap: 2%;
+    }
+  }
+
+>>>>>>> 4d29ac8be7009ceeb325b7cbb12924e6bde2ce18
 </style>
