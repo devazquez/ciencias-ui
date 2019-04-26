@@ -8838,6 +8838,10 @@ vue-loader@^15.6.4:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-loading-overlay@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/vue-loading-overlay/-/vue-loading-overlay-3.2.0.tgz#7896f195e26a8d915219139a096367c9ad2c3c61"
+
 vue-lorem-ipsum@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/vue-lorem-ipsum/-/vue-lorem-ipsum-0.0.1.tgz#9856092a0aa9fef8acc1a2630078f6649ce274c8"
