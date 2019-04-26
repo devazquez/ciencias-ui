@@ -2,7 +2,7 @@
   .pruebaContenedor.w-100.center.tc
     h1 {{ msg }}
     p {{ descripcion }}
-    #gridSpringboard.vh-75.center.pa2-l.pa1 
+    #gridSpringboard.center.pa2-l.pa1 
       div.cosa(v-for="index in lmax")
         | {{ index }}
         | {{ loremArray[aleatorio(min, max)].msg}}
@@ -71,10 +71,6 @@ export default {
     #gridSpringboard {
       display:grid;
       width:98%;
-      grid-template-columns: 24% 24% 24% 24%;
-      grid-template-rows: 32% 32% 32%;
-      grid-gap: 1.3%;
-      grid-row-gap: 2%;
       border:1px solid $blue;
       overflow-wrap: break-word;
     }
@@ -82,4 +78,29 @@ export default {
       border:1px solid $red;
     }
   }
+
+/* media queries para pantallas large*/
+  @media #{$breakpoint-large} {
+    .pruebaContenedor {
+      background: cyan;
+    }
+    #gridSpringboard {
+      grid-template-columns: 24% 24% 24% 24%;
+      grid-template-rows: 32% 32% 32%;
+      grid-gap: 1.3%;
+      grid-row-gap: 2%;
+    }
+  }
+  @media #{$breakpoint-medium} {
+    .pruebaContenedor {
+      background: cadetblue;
+    }
+     #gridSpringboard {
+      grid-template-columns: 32% 32% 32%;
+      grid-template-rows: 32% 32% 32% 32%;
+      grid-gap: 1.3%;
+      grid-row-gap: 2%;
+    }
+  }
+
 </style>

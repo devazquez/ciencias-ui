@@ -2,9 +2,9 @@
   {
     "settings" :[
       {
-        "min": 1,
+        "min": 0,
         "max": 3,
-        "lmax": 10
+        "lmax": 12
       }
     ],
     "loremArray": [
